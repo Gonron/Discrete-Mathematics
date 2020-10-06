@@ -1,6 +1,6 @@
 
 """
-    N:umber
+    N:umber of discs
     F:rom
     H:elper
     T:arget
