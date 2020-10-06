@@ -3,6 +3,7 @@ class Math:
     def sum_even_integers_below(n):
         res = 0
         for k in range(2, n + 1, 2):
+            print(k)
             res += k
         return res
     
