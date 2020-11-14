@@ -30,7 +30,23 @@ Disjunction (or):
 
 ![laws](img/laws.png)
 
+
+Commutative: order dosen't matter
+Associative: calc order dosen't matter
+Distributive: it distrubets the work.
+
+proof of de morgans law
+
+| $a$ | $b$ |  $¬a$ |  $¬b$ |  $(a ∧ b)$ | $¬(a ∧ b)$| $¬a ∨ ¬b$|
+|---|---|---|---|---|---|---|
+|  $false$ | $false$ |  $true$ | $true$  |  $false$ |  $true$ | $true$  |
+|  $false$ |   $true$ |  $true$ | $false$  | $false$  |  $true$ |  $true$ |
+|  $true$ | $false$  |  $false$ | $true$  |  $false$ |  $true$ | $true$  |
+|  $true$|   $true$ | $false$  | $false$  |  $true$ |  $false$ | $false$  |
+
 - **Explain conditional statements, their contrapositive, converse, and inverse, hypothesis and conclusion**
+
+
 
 Conditional Statements:
 
@@ -87,8 +103,11 @@ Modus Tollens = Method of Denying:
 - Explain the universal and existential quantifiers
 
 ![Quantifiers](img/uq.png)
+[universal conditional statements](https://www.csm.ornl.gov/~sheldon/ds/ans1.6.3.html)
+
 
 - Present some arguments with quantified statements
+
 
 ![Arguments](img/aqs.png)
 
@@ -113,12 +132,12 @@ In other words, everything on the left of the equation is the sequence, and not 
 
 Sequences have a *start*.
 Sequences have a *succ* fucntion (next).
-The*succ* function is guarateed to reach every value in the sequence, exactly one time.
+The *succ* function is guarateed to reach every value in the sequence, exactly one time.
 The sequence has an order.
 
 - Explain summations and telescopic sums
 
-???
+telescopic: everything between the start and end is 0, there for we can colapse the sum like a telescope
 
 - Explain products and theorems for working with sums and products
 
@@ -159,6 +178,8 @@ In other words, we use a prev. term to calculate the current term. see picture a
 **Type-2** Context-free languages
 **Type-3** Regular languages 
 
+????
+
 - Define “alphabet”, “string”, and “language”
 
 Alphabet, is a **finite** set of characters 
@@ -174,25 +195,102 @@ Language *L over Σ* is a set of strings over Σ
 *L = {on, off}*
 the empty set Ø or {} is a formal language.
 
+*Alphabets and strings Σ is an alphabet*
+*Σn is all strings over Σ with the lenght n*
+*Σ+ is all non-empty strings over Σ*
+
+
+*Combination of languages*
+*L = {lamp_, fridge_} and L′ = {on, off}*
+
+*LL′: **Concatenation** of L and L′*
+*LL′ = {xy | x ∈ L ∧ y∈ L′}*
+*LL′={lamp_on, lamp_off, fridge_on, fridge_off}*
+
+*L ∪ L′: **Union** of L and L′*
+*L ∪ L′ = {x | x ∈ L ∨ x ∈ L′}*
+*L ∪ L′ = {lamp_, fridge_, on, off}*
+
+*L**: ***Kleene Closure** of L*
+*L = {'lamp', 'fridge'}*
+*L∗ = {ε, lamp, fridge, lamplamp, lampfridge, lamplampfridge, ...}*
+
 - What is the Kleene closure of a language?
+
+*Σ∗ is all strings over Σ- the Kleene closure of Σ*
+
+Kleene closure is a formal language and can be defined as such
+
+*L = {'lamp', 'fridge'}*
+*L∗ = {ε, lamp, fridge, lamplamp, lampfridge, lamplampfridge, ...}*
+
+
 - How are regular expressions defined?
+*see [slide 12](https://datsoftlyngby.github.io/soft2020fall/resources/6bde8e7b-05-regex-handouts.pdf)*
+
+Base: *are called terminal*
+*Ø, ε, x | x ∈ Σ*
+
+Recursion: *are called non-terminal*
+r, s ∈ regular expression over Σ
+
+(rs) - r concatened with s
+(r|s) - r or s
+(r*) - zero ore more *r∗ ∈ {ε, r, rr, rrr, ...}*
+
 - Explain the parts of a finite-state automaton
+
+A finite-state automaton consists of:
+    1. a finite **input alphabet** Σ of input symbols
+    2. a finite set of **states** *S*
+    3. an **intial state** *s0, s0 ∈ S*
+    4. a set of **final states** *F (accepting states)*
+    5. a **next-state function** *N : S × Σ → S*
+
+- Drawing A(B|CD)*E
+![FSA A(B|CD)*E example D](img/abcde_d.png)
+
+Not that the above example is deterministic and the one below is non-deterministic... This is because of the ε.
+
+![FSA A(B|CD)*E example ND](img/abcde_nd.png)
+
 - Define the eventual-state function
+
+Compared to the **next-state function** it works on strings and not just characters
+
+![Eventual-State Function](img/esf.png)
+
+Eventual-state function tells you which of the characters in the string reaches an end-state.
+
 - Explain the relation between regular languages and languages accepted by a finite-state automaton
+
+????
 
 
 ## 1.5 Set Theory
+
 - Define a set
 - How can an ordered pair be defined using sets only?
 - Explain the Cartesian product
 - Define a relation and a function, what is the empty set and a powerset
+
+????
+
 - Define subsets and set equality
 - Present some laws on sets
+
+
 ## 1.6 Relations
 - Define a relation on a set
 - Explain reflectivity, symmetry, and transitivity
 - What is the relation defined by a partition?
 - Explain antisymmetry and partial ordering of sets
+
+Symetric, it goes both ways.
+antisymmetric Should go both ways, and therefor be equal
+Not-antisymmetric Should go both ways and NOT be equal
+
+
 ## 1.7 Static Analysis
 - Explain static analysis and Hoare Logic in general
 - Explain the ideas behind design by contract

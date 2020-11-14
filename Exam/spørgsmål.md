@@ -1,0 +1,3 @@
+- 1.3
+- Explain the relation between regular languages and languages accepted by a finite-state automaton
+- induction
