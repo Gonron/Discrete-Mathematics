@@ -264,7 +264,8 @@ Eventual-state function tells you which of the characters in the string reaches 
 
 - Explain the relation between regular languages and languages accepted by a finite-state automaton
 
-????
+If you can make a finite state automata, you can make a regex about it
+if you can make a regex, you can make a finite state automata about it
 
 
 ## 1.5 Set Theory
@@ -274,7 +275,8 @@ Eventual-state function tells you which of the characters in the string reaches 
 - Explain the Cartesian product
 - Define a relation and a function, what is the empty set and a powerset
 
-????
+et input må kun have ET output
+flere inputs må gerne have det samme output
 
 - Define subsets and set equality
 - Present some laws on sets
@@ -293,7 +295,32 @@ Not-antisymmetric Should go both ways and NOT be equal
 
 ## 1.7 Static Analysis
 - Explain static analysis and Hoare Logic in general
+
+
+
 - Explain the ideas behind design by contract
 - Present the general content of design by contract code
 - Explain what Sound and Complete analysis are
+
+Soundness: alle dårlige programmer vil blive fanget (men også nogle gode)
+Completness: alle gode programmer vil blive kørt (men også nogle dårlige)
+
+/////////////////////////////////////////////////////////////
+
+Soundness: Vi er 100% sikker på at alle skyldige mennesker kommer i fængsel, men der vil også komme nogle uskyldige
+
+Completness: Vi er 100% sikker på at alle uskyldige mennesker IKKE kommer i fængsel, men der vil også være nogle skyldige som går fri.
+
 - In general terms, explain the process of static analysis
+
+Start med din P= [Y ∈ {. . .}] pre-condition og din Q= [X ∈ {. . .}] post-condition
+
+Hefter går du igennem hver linje i code-blokken og opdatere Staten S og ser hvordan din post-condition ændre sig
+
+Til sidst sammenligner du din State med post-conditionen og hvis den er partielt mindre [S<Q] i post-conditionen skal den accepteres, ellers skal den rejectes. (mærkeligt kyssemunds krodillenæb)
+
+////
+
+If Q covers all possible states S, analysis succeeded
+
+////
