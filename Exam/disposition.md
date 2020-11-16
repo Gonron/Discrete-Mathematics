@@ -1,9 +1,9 @@
 ### 1 Logic
-Explain sentences: negation (not), conjunction (and), and disjunction (or), tautologies and contradictions
-Explain truth tables
-Present some laws of logical equivalence including De Morgan’s law
-Explain conditional statements, their contrapositive, converse, and inverse, hypothesis and conclusion
-Explain arguments, modus ponens and modus tollens
+Explain sentences: negation (not), conjunction (and), and disjunction (or), tautologies and contradictions  
+Explain truth tables  
+Present some laws of logical equivalence including De Morgan’s law  
+Explain conditional statements, their contrapositive, converse, and inverse, hypothesis and conclusion  
+Explain arguments, modus ponens and modus tollens  
 
 - **Sentences**
     - Negation
@@ -11,6 +11,7 @@ Explain arguments, modus ponens and modus tollens
     - Disjunction
     - **t**autologies
     - **c**ontradictions
+    - Exclusive or $(a∨b)∧¬(a∧b)$
 - **Laws of Equivalence** 
     - Commutative  $a ∧ b ≡ b ∧ a$
     - Associatitve $(a ∧ b) ∧ c ≡ a ∧ (b ∧ c)$
@@ -29,15 +30,15 @@ Explain arguments, modus ponens and modus tollens
     - Modus Tollens (method of denying)
 
 ### 2 Predicates and Quantified statements
-Define predicates and their truth sets
-Explain the universal and existential quantifiers
-Present some arguments with quantified statements
-Present some laws of multi-quantified statements including De Morgan’s law
+Define predicates and their truth sets  
+Explain the universal and existential quantifiers  
+Present some arguments with quantified statements  
+Present some laws of multi-quantified statements including De Morgan’s law  
 
 - **Predicate**
-    - *Set-Roster notation* - Domain $D = {1, 2, \dots, 8, 9}$
+    - *Set-Roster notation* - Domain $D = \{1, 2, \dots, 8, 9\}$
     - Set-Builder notation $\{x ∈ D | x ≤ 5\}$
-    - Truth sets ${1, 2, 3, 4, 5}$
+    - Truth sets $\{1, 2, 3, 4, 5\}$
 - **Quantifiers**
     - Universal $∀x ∈ D, P(x)$ 
     - Existential $∃x ∈ E, Q(x)$
@@ -53,12 +54,12 @@ Present some laws of multi-quantified statements including De Morgan’s law
     - De Morgan's $¬(∀x∈D,∃y∈E, P(x, y))$
 
 ### 3 Sequences, Induction and Recursion
-Define a sequence
-Explain summations and telescopic sums
-Explain products and theorems for working with sums and products
-Explain factorials and combinations
-Describe the induction principles
-Explain recursion
+Define a sequence  
+Explain summations and telescopic sums  
+Explain products and theorems for working with sums and products  
+Explain factorials and combinations  
+Describe the induction principles  
+Explain recursion  
 
 - **Sequence**
     - Definition $D:f(x)=\text{result}$
@@ -101,13 +102,13 @@ Explain recursion
     - Show Factorials
 
 ### 4 Regular Expressions and Finite-state Automata
-Distinguish languages types according to Chomsky
-Define “alphabet”, “string”, and “language”
-What is the Kleene closure of a language?
-How are regular expressions defined?
-Explain the parts of a finite-state automaton
-Define the eventual-state function
-Explain the relation between regular languages and languages accepted by a finite-state automaton
+Distinguish languages types according to Chomsky  
+Define “alphabet”, “string”, and “language”  
+What is the Kleene closure of a language?  
+How are regular expressions defined?  
+Explain the parts of a finite-state automaton  
+Define the eventual-state function  
+Explain the relation between regular languages and languages accepted by a finite-state automaton  
 
 - **Chomsky**
     - **Type-0** Turning-complete languages  
@@ -152,12 +153,12 @@ Explain the relation between regular languages and languages accepted by a finit
      
 
 ### 5 Set Theory
-Define a set
-How can an ordered pair be defined using sets only?
-Explain the Cartesian product
-Define a relation and a function, what is the empty set and a powerset
-Define subsets and set equality
-Present some laws on sets
+Define a set  
+How can an ordered pair be defined using sets only?  
+Explain the Cartesian product  
+Define a relation and a function, what is the empty set and a powerset  
+Define subsets and set equality  
+Present some laws on sets  
 
 - **Notation**
     - Set-roster notation $A= \{1,2,3\} \quad B = \{10,11,12, \dots ,119\}$
@@ -197,16 +198,17 @@ Present some laws on sets
     - $∀x∈A∧y∈B∧z∈B,((x, y)∈F∧(x, z)∈F)→y=z$
 
 ### 6 Relations
-Define a relation on a set
-Explain reflectivity, symmetry, and transitivity
-What is the relation defined by a partition?
-Explain antisymmetry and partial ordering of sets
+Define a relation on a set  
+Explain reflectivity, symmetry, and transitivity  
+What is the relation defined by a partition?  
+Explain antisymmetry and partial ordering of sets  
 
 - **Definition**
     - When $R$ is a relation $xRy$
     - $R⊆\{(x, y)∈A×B\}$
     - $R^{−1}=\{(y, x)∈B×A|(x, y)∈R\}$
-- **Properties**
+- **Properties** 
+    - *A {2,3,4,6,7,9} modulo 3*
     - Reflectivity $∀x∈\mathbb{R}, x R x$
     - Symmetry $∀x, y∈\mathbb{R}, x R y→y R x$
     - Transitivity $∀x, y, z∈\mathbb{R}, x R y∧y R z→x R z$
@@ -230,11 +232,11 @@ Explain antisymmetry and partial ordering of sets
     - *draw hasse-diagram* $\mathcal{P}(\{a,b,c\})$
 
 ### 7 - Explain static analysis and Hoare Logic in general
-Explain static analysis and Hoare Logic in general
-Explain the ideas behind design by contract
-Present the general content of design by contract code
-Explain what Sound and Complete analysis are
-In general terms, explain the process of static analysis
+Explain static analysis and Hoare Logic in general  
+Explain the ideas behind design by contract  
+Present the general content of design by contract code  
+Explain what Sound and Complete analysis are  
+In general terms, explain the process of static analysis  
 
 - **Static analysis**
     - Soundness: A static analysis is said to be sound if it rejects all faulty programs.
